@@ -1,7 +1,8 @@
-<javascript>
-  $('#counter').html(0); // Set the initial value
+var cookies = 0;
 
-$('#clicker').click(function(){
-   var count =  Number($('#counter').html()); // Get the current value
-   $('#counter').html(count+1); // Add 1 to the counter
-});
+function cookieClick(number){
+    cookies = cookies + number;
+    document.getElementById("cookies").innerHTML = cookies;
+};
+
+
